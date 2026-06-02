@@ -1,0 +1,10 @@
+[package]
+name = "chip8-asm"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+chip8-op = { version = "0.1.0", path = "../chip8-op" }
+clap = { version = "4.6.1", default-features = false, features = ["derive", "help", "std"] }
+env_logger = { version = "0.11.10", default-features = false }
+log = { version = "0.4.30", default-features = false, features = ["max_level_info", "release_max_level_warn"] }
